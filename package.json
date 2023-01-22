@@ -1,0 +1,27 @@
+{
+  "name": "@jotai-labs/scripts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mathis Møller",
+  "license": "MIT",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "colorette": "^2.0.19",
+    "tsup": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
