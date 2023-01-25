@@ -7,6 +7,9 @@
   "keywords": [],
   "author": "Mathis Møller",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/jotai-labs/scripts.git"
+  },
   "bin": {
     "jotai-scripts": "dist/bin.js"
   },
