@@ -2,7 +2,7 @@
   "name": "jotai-scripts",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [],
   "author": "Mathis Møller",
