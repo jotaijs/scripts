@@ -18,15 +18,18 @@
     "/dist"
   ],
   "scripts": {
-    "build": "tsup src/bin.ts src/index.ts --clean --splitting --dts"
+    "build": "jotai-scripts build",
+    "test-build": "node dist/bin.js build"
   },
   "dependencies": {
     "cac": "^6.7.14",
     "colorette": "^2.0.19",
+    "joycon": "^3.1.1",
     "tsup": "^6.5.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "jotai-scripts": "^0.0.2",
     "prettier": "^2.8.3",
     "typescript": "^4.9.4"
   },

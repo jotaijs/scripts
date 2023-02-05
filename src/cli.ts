@@ -1,7 +1,10 @@
 import { cac } from 'cac';
 import { Options } from 'tsup';
+import process from 'process';
+import JoyCon from 'joycon';
 
 import { version } from '../package.json';
+import path from 'path';
 
 const JOTAI_SCRIPTS_CONFIG_FILENAME = 'jotai-scripts.config.ts';
 
@@ -20,7 +23,19 @@ export async function main(options: Options = {}) {
         ...flags,
       });
 
-      await build({ ...options, config: JOTAI_SCRIPTS_CONFIG_FILENAME });
+      const cwd = process.cwd();
+      const configJoycon = new JoyCon();
+      const config = await configJoycon.resolve({
+        files: ['jotai-scripts.config.ts'],
+        cwd: process.cwd(),
+        stopDir: path.parse(cwd).root,
+      });
+
+      if (!config) {
+        throw new Error('jotai-scripts.config.ts file not found');
+      }
+
+      await build({ ...options, config });
     });
 
   cli.help();
