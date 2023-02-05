@@ -4,7 +4,7 @@ specifiers:
   '@types/node': ^18.11.18
   cac: ^6.7.14
   colorette: ^2.0.19
-  jotai-scripts: ^0.0.2
+  jotai-scripts: ^0.0.3
   joycon: ^3.1.1
   prettier: ^2.8.3
   tsup: ^6.5.0
@@ -18,7 +18,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 18.11.18
-  jotai-scripts: 0.0.2_typescript@4.9.4
+  jotai-scripts: 0.0.3_typescript@4.9.4
   prettier: 2.8.3
   typescript: 4.9.4
 
@@ -466,12 +466,13 @@ packages:
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  /jotai-scripts/0.0.2_typescript@4.9.4:
-    resolution: {integrity: sha512-NhvkShgTdI57MpprHwfUNXHQWmFhdHn2GYCQzed9MYAV5d0cfs4k5+k2pcWEVtjQq5PZe1j2f27IvezZAvcBBQ==}
+  /jotai-scripts/0.0.3_typescript@4.9.4:
+    resolution: {integrity: sha512-6/ahd3U5m6w8v75x9PhtbtPZGLb+71THMAM+gYHBNlPIJkNVlw6LAc9lfIPdhG5zNI6uSrtv1j4oChOLl22vIQ==}
     hasBin: true
     dependencies:
       cac: 6.7.14
       colorette: 2.0.19
+      joycon: 3.1.1
       tsup: 6.5.0_typescript@4.9.4
     transitivePeerDependencies:
       - '@swc/core'
